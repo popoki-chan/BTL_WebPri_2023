@@ -1,0 +1,57 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    header {
+        height: 60px;
+    }
+
+    header>.menu,
+    header>.account {
+        display: none;
+    }
+
+    .logo-header {
+        width: 100px;
+        flex: 0.3;
+        margin-left: 0;
+    }
+
+    .logo-header>img {
+        width: 100%;
+
+    }
+
+    header>.nav-resp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header>.nav-resp>i {
+        padding: 20px 20px;
+    }
+
+    header>.nav-resp>i:last-child {
+        position: relative;
+    }
+
+    header>.nav-resp>i:last-child>ul {
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 60px;
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner-resp {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banner-resp>img {
+        width: 100%;
+    }
+}
