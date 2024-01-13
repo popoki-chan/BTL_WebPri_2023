@@ -1,3 +1,4 @@
+
 //discovery
 const arrProduct = [
     { ma: "SP01", name: "Xe máy điện Evo200 Lite", hinh: "sp01.jpg", price: "18.000.000", saled: "Đã bán 5.4k", note: "Evo20 LTE", inf_note: "Xe học sinh - Không cần bằng lái" },
@@ -60,7 +61,6 @@ document.querySelector(".endow-list").innerHTML = str1;
 //Phần best-sale
 
 
-
 //news
 const arrNews = [
     { hinh1: "news1.jpg", tieuDe: "Xe máy điện VinFast kiến tạo tương lai xanh tại Việt Nam", text: "(Theo VOV) - Xe máy điện với những ưu điểm về tính năng vận hành, thân thiện môi trường ngày càng được tin dùng để thay thế cho các loại phương tiện giao thông truyền thống." },
@@ -92,6 +92,26 @@ for (let i = 0; i < arrNews.length; i++) {
 
 document.querySelector(".news-list").innerHTML = str2;
 
+//button: prev, next
+$('.endow-list').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    draggable: true,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+});
+
+$('.news-list').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+});
+
 ScrollReveal({
     reset: false,
     distance: '50px',
@@ -101,23 +121,14 @@ ScrollReveal({
 // ScrollReveal().reveal('.discover, .best-sale, .endow, .news, .div', { delay: 50, origin: 'left', inveral: 200 });
 
 
-let list = document.querySelector('.endow .endow-list');
-let e_list = document.querySelectorAll('.endow .endow-list .column');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
 
-let active = 0;
+const openSideService = document.querySelector('.drop-down');
+const list = document.querySelector('.list-service');
 
-function reloadSlider() {
-    let checkLeft = e_list[active];
-    list.computedStyleMap.left = checkLeft + 'px';
-}
-
-next.onclick = function () {
-    active += 1;
-    reloadSlider();
-}
-
-next.onclick = function () {
-    console.log(123);
-}
+openSideService.addEventListener('click', function () {
+    if (list.style.display === 'none') {
+        list.style.display = 'block';
+    } else {
+        list.style.display = 'none';
+    }
+});

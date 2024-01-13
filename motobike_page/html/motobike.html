@@ -4,12 +4,12 @@
 <head>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/motobike_page/css/motobike.css">
     <link rel="stylesheet" href="/motobike_page/css/res.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@200;300&family=Mulish:wght@200&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/font/Mulish/Mulish-Italic-VariableFont_wght.ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,14 @@
         <div class="menu">
             <li>Sản phẩm</li>
             <li>Ưu đãi</li>
-            <li>Dịch vụ hậu mãi</li>
+            <li class="drop-down">Dịch vụ hậu mãi
+                <ul class="list-service">
+                    <li>Thông tin bảo hành</li>
+                    <li>Thông tin bảo dưỡng định kỳ</li>
+                    <li>Hướng dẫn sử dụng xe máy điện</li>
+                    <li><a href="/motobike_page/html/tramSac.html">Pin và trạm sạc</a></li>
+                </ul>
+            </li>
             <li>Tin tức</li>
         </div>
         <div class="account"><a href="/html/account.html">Tài khoản</a></div>
@@ -34,7 +41,7 @@
                 <ul>
                     <li>Sản phẩm</li>
                     <li>Ưu đãi</li>
-                    <li>Dịch vụ hậu mãi</li>
+                    <li>Dịch vụ hậu mãi </li>
                     <li>Tin tức</li>
                 </ul>
             </i>
@@ -61,18 +68,21 @@
         <div class="product-super">
             <div class="product">
                 <div class="product-img">
-                    <img src="/motobike_page/image/img-sale01-01.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale01-02.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale01-03.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale01-04.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale01-05.jpg" alt="">
-                </div>
-                <div class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale01-01.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale01-02.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale01-03.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale01-04.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale01-05.jpg" alt="">
+                    </div>
                 </div>
                 <p>Xe máy điện VinFast Evo200</p>
                 <div class="price">
@@ -85,18 +95,21 @@
             </div>
             <div class="product">
                 <div class="product-img">
-                    <img src="/motobike_page/image/img-sale02-01.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale02-02.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale02-03.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale02-04.jpg" alt="">
-                    <img src="/motobike_page/image/img-sale02-05.jpg" alt="">
-                </div>
-                <div class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale02-01.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale02-02.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale02-03.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale02-04.jpg" alt="">
+                    </div>
+                    <div class="pd-img-child">
+                        <img src="/motobike_page/image/img-sale02-05.jpg" alt="">
+                    </div>
                 </div>
                 <p>Xe máy điện VinFast Feliz S</p>
                 <div class="price">
@@ -120,23 +133,12 @@
 
     <div class="endow">
         <p>Ưu đãi mới nhất</p>
-
         <div class="endow-list"></div>
-        <div class="buttons">
-            <button id="prev">
-                < </button>
-                    <button id=next> > </button>
-        </div>
     </div>
 
     <div class="news">
         <p>Tin tức mới nhất</p>
         <div class="news-list"></div>
-        <div class="buttons">
-            <button id="prev">
-                < </button>
-                    <button id=next> > </button>
-        </div>
     </div>
 
     <div class="super-sub">
@@ -174,7 +176,7 @@
 
             <div class="contact">
                 Bằng cách đăng ký, Quý khách xác nhận đã đọc, hiểu và đồng ý với
-                <a href="https://vinfastauto.com/vn_vi/dieu-khoan-phap-ly" target="_blank">Chính sách quyền riêng tư của
+                <a href="/motobike_page/html/dieuKhoan.html" target="_blank">Chính sách quyền riêng tư của
                     VinFast</a>
             </div>
         </div>
@@ -214,21 +216,25 @@
             <li class="ct"><i class="fa-regular fa-envelope"></i><span>support.vn@vinfastauto.com</span></li>
             <li>LIÊN HỆ</li>
             <li>Kết nối với VinFast</li>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <a href="https://www.facebook.com/VinFastAuto.Official" target="_blank" style="margin-right: 20px;">
+                <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCA5OijDHvvWJ3vy5iVdWcAQ" target="_blank"><i
+                    class="fa-brands fa-youtube" style="color: red;"></i></a>
         </div>
         <div class="column">
             <li>ĐĂNG KÝ NHẬN THÔNG TIN</li>
             <li>Đăng ký nhận thông tin chương trình khuyến mãi, dịch vụ VinFast</>
-                <input type="text" placeholder="Nhập email của quý khách">
+            <li><input type="text" required placeholder="Nhập email của quý khách"></li>
             <li>Bằng cách đăng ký, Quý khách xác nhận đã đọc, hiểu và đồng ý với <a
-                    href="https://vinfastauto.com/vn_vi/dieu-khoan-phap-ly" target="_blank">Chính sách quyền riêng tư
+                    href="/motobike_page/html/dieuKhoan.html" target="_blank">Chính sách quyền riêng tư
                     của
                     VinFast</a>
             </li>
         </div>
     </footer>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 <script src="/motobike_page/js/motobike.js"></script>
 

@@ -54,4 +54,8 @@
     .banner-resp>img {
         width: 100%;
     }
+
+    /* .list-product {
+        flex-direction: column;
+    } */
 }
