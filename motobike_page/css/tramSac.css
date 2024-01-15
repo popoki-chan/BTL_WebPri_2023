@@ -596,3 +596,88 @@ a {
 .charge-located>.list-located>.cl>img {
     margin-right: 10px;
 }
+
+.super-charge>.image2 {
+    width: 50%;
+}
+
+.super-charge>.image2>img {
+    width: 100%;
+}
+
+.super-charge>.content-v2 {
+    width: 40%;
+    font-weight: lighter;
+}
+
+.content-v2>.ct {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.content-v2>.note {
+    font-weight: bolder;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.content-v2>.note>li {
+    list-style: disc;
+    margin-left: 28px;
+    font-weight: lighter;
+}
+
+.content-v2>a>input {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 16px;
+    letter-spacing: .1em;
+    border-radius: 3px;
+}
+
+.content-v3 {
+    width: 50%;
+    height: auto;
+}
+
+.content-v3>h1 {
+    font-weight: lighter;
+    font-size: 38px;
+}
+
+.content-v3>.content-body {
+    margin: 40px 0;
+    border-radius: 0 0 5px 5px;
+    padding: 24px 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3c3c3c;
+    background-color: #f0f3f3;
+    line-height: 1.5
+}
+
+.content-v3>.content-body>table {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.content-v3>.content-body>table>tbody>tr>td {
+    padding: 6px 60px 0 0;
+}
+
+.super-charge>.image3 {
+    height: 450px;
+    width: 50%;
+    margin-left: 20vh;
+    flex: 1;
+}
+
+.super-charge>.image3>img {
+    height: 100%;
+}
