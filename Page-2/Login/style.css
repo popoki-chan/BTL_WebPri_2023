@@ -62,4 +62,71 @@ a {
     bottom: 0px;
 }
 
+/* .tree {
+    background-image: url(/BTL/BTL_WebPri_2023/Image/tree.png);
+    margin: 50px;
+} */
+.tree {
+    position: relative;
+    background-image: url(/BTL/BTL_WebPri_2023/Image/tree.png);
+    height: 400px;
+    margin: 50px;
+    overflow: hidden;
+}
+.text-btr-3 {
+    position: absolute;
+    align-items: center;
+    padding: 100px;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #00000000, #000000d4);
+    right: 0;
+}
+
+.text-btr-3 p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* .tree-0 img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    object-position: 100% 0 ;
+}
+
+.text-btr-4 {
+    
+} */
+
+.tree-0 {
+    background-image: url(/BTL/BTL_WebPri_2023/Image/Car1.png);
+    width: 100vw;
+    height: 80vh;
+    background-position:100% 0 ;
+    background-size: cover;
+}
+
+.tree-0 .text-btr-4 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 80vh;
+    justify-content: center;
+    padding-left: 150px;
+    align-content: center;
+}
+
+.tree-0 .text-btr-4 p {
+    color: rgb(61, 61, 61);
+    line-height: 25px;
+}
+
+.tree-0 .text-btr-4 p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+}
+
 

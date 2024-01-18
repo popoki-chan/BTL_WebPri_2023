@@ -72,21 +72,23 @@ a {
     width: 100vw;
     align-items: center;
     position: fixed;
-    
+    z-index: 10;
 }
 
 #header a {
     color: #000;
     margin-right: 30px;
+    transition: 0.3s;
 }
 
 #header  a:hover {
     color: var(--clr);
+    
 }
 
 #header .acount .register {
     background-color: var(--clr);
-    border: 1px solid #fff;
+    border: 1px solid #ffffff00;
     border-radius: 3px;
     color: #fff;
     font-size: 12px;
@@ -379,6 +381,69 @@ hr {
     margin-right: 70px;
 }
 
+.img-slide-1 {
+    position: relative;
+   
+}
+
+.slide img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#body .slide-text-box {
+    position: absolute;
+    bottom: 5px;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    opacity: 80%;
+}
+
+.click-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 4px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+#a1 .circle:first-child {
+    opacity: 100% !important;
+}
+
+#a2 .circle:nth-child(2) {
+    opacity: 100% !important;
+}
+
+#a3 .circle:nth-child(3) {
+    opacity: 100% !important;
+}
+
+#a4 .circle:nth-child(4) {
+    opacity: 100% !important;
+}
+
+#a5 .circle:nth-child(5) {
+    opacity: 100% !important;
+}
+
 .banner {
     display: flex;
     flex-direction: row;
@@ -445,7 +510,7 @@ hr {
 
 .interact input {
     background-color: var(--clr);
-    border: 1px solid #fff;
+    border: 1px solid #ffffff00;
     border-radius: 3px;
     color: #fff;
     font-size: 12px;
@@ -453,9 +518,8 @@ hr {
     text-transform: uppercase;
     width: 200px;
     height: 50px;
-    margin: 0 30px 80px 0 ;
+    margin: 30px 30px 80px 0 ;
     transition: all 0.25s linear;
-    
 }
 
 .interact input:hover {
@@ -477,30 +541,49 @@ hr {
     text-align: center;
 }
 
-.battery {
+.block-battery {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
 
 .btr1 {
     display: flex;
     flex-direction: column;
+    align-self: start;
+    margin-right: 15px;
+    justify-content: space-between;
 }
 
-.box-item img{
+.box-item {
+    position: relative;
+    background-size: cover;
     width: 45vw;
-    object-fit: cover;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    height: 55vh;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
 }
 
+.box-item:first-child {
+    margin-bottom: 30px;
+    background-image: url(https://autopro8.mediacdn.vn/134505113543774208/2022/7/8/photo-2-16572448496901373303161.jpeg);
+}
+.box-item:last-child {
+    background-image: url(https://thanhnien.mediacdn.vn/Uploaded/hongky-qc/2022_07_12/anh-1-1722.jpg);
+}
 
 .text-btr-1 p:first-child {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
+}
+
+.text-btr-1 p:last-child {
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .text-btr-1{
@@ -511,22 +594,38 @@ hr {
     color: rgb(255, 255, 255);
     margin-top: 180px;
     padding: 20px 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.899));;
-}
-.btr2 {
-    border: 1px solid rgba(215, 215, 215, 0.663);
-}
-.text-btr-2 {
-    padding: 20px 20px;
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.899));
+    transition: 0.5s;
+    bottom: -135px;
 }
 
-.text-btr-2 p:first-child {
-    font-size: 25px;
+.text-btr-1:hover {
+    bottom: 0;
+}
+
+.btr2 {
+    background-color: var(--bg);
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.text-btr-2 {
+    padding: 20px 20px;
+}
+.text-btr-2 img {
+    width: 100%;
+}
+
+.card-3 {
+    padding: 20px;
+}
+
+.card-3 p:first-child {
+    font-size: 24px;
     font-weight: 500;
 }
 
-.text-btr-2 p:last-child {
+.text-btr-2 p a:last-child {
     color: var(--clr);
     font-size: small;
     font-weight: 600;
@@ -540,13 +639,12 @@ hr {
 
 .find li:first-child {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .find li:last-child {
     font-size: 12px;
     font-weight: bold;
-    
 }
 
 a {
@@ -555,8 +653,8 @@ a {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 40vw 40vw ;
-    grid-template-rows: 40vh;
+    grid-template-columns: 46vw 46vw ;
+    grid-template-rows: 50vh;
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -565,11 +663,14 @@ a {
 .grid-item {
     position: relative;
     background-size: cover;
-    margin: 15px;
+    
     margin-bottom: 0;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .grid-item:first-child {
+    margin-right: 30px;
     background-image: url(https://storage.googleapis.com/vinfast-data-01/Showroom%20Hai%20Phong1_1637201595.jpg);
 }
 
@@ -584,7 +685,6 @@ a {
     padding: 30px 0;
     width: 100%;
     bottom: -60px;
-    object-fit: contain;
     transition: 0.5s;
 }
 
@@ -592,10 +692,168 @@ a {
     bottom: 0px;
 }
 
+.tree {
+    display: block;
+    position: relative;
+    background-image: url(/BTL/BTL_WebPri_2023/Image/tree.png);
+    height: 500px;
+    margin: 50px;
+    overflow: hidden;
+    align-items: center;
+}
 
+.text-btr-3 {
+    position: absolute;
+    padding: 100px;
+    padding-left: 60%;
+    padding-right: 150px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #00000000, #000000d4);
+    width: 100%;
+    height: 500px;
+    right: 0;
+    line-height: 25px;
+}
 
+.text-btr-3 p:first-child {
+    font-size: 24px;
+    font-weight: 500;
+}
 
+.text-btr-3 input {
+    background-color: var(--clr);
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 24px;
+    margin: 0 44px 0 0;
+    transition: all 0.25s linear;
+}
 
+.text-btr-3 input:hover {
+    background-color: #fff;
+    border: 1px solid var(--clr);
+    color: var(--clr);
+    cursor: pointer;
+}
+.tree-0 {
+    background-image: url(/BTL/BTL_WebPri_2023/Image/Car1.png);
+    height: 90vh;
+    background-position:100% 0 ;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 
+.tree-0 .text-btr-4 {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 90vh;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 150px;
+    align-content: center;
+}
+
+.tree-0 .text-btr-4 p {
+    color: var(--text);
+    line-height: 25px;
+}
+
+.tree-0 .text-btr-4 p:first-child {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.fix input {
+    border-radius: 0 !important;
+}
+
+.fix input:nth-child(1) {
+    width: 180px;
+    margin-right: 10px;
+} 
+.fix input:nth-child(2) {
+    width: 120px;
+}
+
+.tree-0 .text-btr-4 .fix {
+    text-align: start;
+}
+
+.login {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230616/pngtree-metallic-background-with-sleek-3d-lines-image_3617066.jpg);
+    height: 50vh;
+    background-position:0 50%;
+    background-size: cover;
+}
+
+.login-text {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(61, 83, 109, 0.789), rgba(62, 52, 96, 0.689));
+
+}
+
+.login-text p {
+    color: white;
+}
+
+.login-text p:first-child {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.login-text p:nth-child(3) {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login-text p:nth-child(5) {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.login-text p:nth-child(5) a:hover {
+    text-decoration: underline;
+}
+
+.input-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input-text input {
+    padding: 16px 15px;
+    font-size: 12px;
+    border: none;
+    color: var(--text);
+    width: 35vw;
+}
+
+.input-text p a {
+    display: block;
+    padding: 16px 70px;
+    background-color: var(--clr);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.input-text p a:hover{
+    background-color: #fff;
+    color:var(--clr);
+    cursor: pointer;
+}
 
 
