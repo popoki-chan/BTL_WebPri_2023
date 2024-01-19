@@ -10,13 +10,32 @@ html {
 
 @font-face {
     font-family: vinfast ;
-    src: url(/BTL/BTL_WebPri_2023/Font/Xbka.otf);
+    src: url(/BTL/BTL_WebPri_2023/Page-Home/Font/Xbka.otf);
+}
+
+
+@keyframes hide {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+@keyframes hold {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
 }
 
 :root {
     --clr: #1464f4;
     --text: #3c3c3c;
-    --bg: #f8f8f8b8;
+    --bg: #f9fbfb;
 }
 
 .flex {
@@ -35,6 +54,10 @@ html {
 }
 
 ul {
+    list-style-type: none;
+}
+
+li {
     list-style-type: none;
 }
 
@@ -381,9 +404,13 @@ hr {
     margin-right: 70px;
 }
 
+.slide {
+    transition: all 0.3s;
+}
+
 .img-slide-1 {
     position: relative;
-   
+    animation: hide 0.4s ease-in-out;
 }
 
 .slide img{
@@ -398,6 +425,7 @@ hr {
     z-index: 9;
     text-align: center;
     width: 100%;
+    margin-bottom: 65px;
 }
 
 h2 {
@@ -409,39 +437,29 @@ h2 {
 }
 
 .click-bar {
+    position: absolute;
+    bottom: 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 30px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
 }
+
 .circle {
     width: 12px;
     height: 12px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
     margin: 4px;
     cursor: pointer;
     opacity: 50%;
 }
 
-#a1 .circle:first-child {
-    opacity: 100% !important;
-}
-
-#a2 .circle:nth-child(2) {
-    opacity: 100% !important;
-}
-
-#a3 .circle:nth-child(3) {
-    opacity: 100% !important;
-}
-
-#a4 .circle:nth-child(4) {
-    opacity: 100% !important;
-}
-
-#a5 .circle:nth-child(5) {
-    opacity: 100% !important;
+.active {
+    opacity: 100%;
 }
 
 .banner {
@@ -450,40 +468,54 @@ h2 {
     font-family: vinfast;
     font-size: 40px;
     color: var(--text);
-    justify-content: center;
+    justify-content:space-around;
 }
 
 .text {
     margin: 80px 20px;
+    cursor: pointer;
+    color: var(--text);
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-top: #ffffff00;
+    border-left:#ffffff00 ;
+    border-right: #ffffff00;
 }
 
-.text:first-child {
+.bn2 .text {
+    margin: 0 !important;
+}
+
+.change {
     color: var(--clr);
-    border: 3px solid var(--clr);
-    border-top: #1464f4;
-    border-left:#1464f4 ;
-    border-right: #1464f4;
+    border-bottom: 3px solid var(--clr);
 }
 
-.bn2 {
-    margin-left: 70px;
-    margin-right: 70px;
+path{
+    fill: var(--clr) !important;
 }
 
-.logo-motor img{
-    width: 80%;
-}
-
-.text:hover {
-    color: var(--clr);
-    border: 3px solid var(--clr);
-    border-top: #1464f4;
-    border-left:#1464f4 ;
-    border-right: #1464f4;
+.logo-motor {
+    border-bottom: 3px solid var(--clr);
 }
 
 .img-slide-2 img {
-    margin:  10px 20em;
+    width: 75%;
+    object-fit: cover;
+}
+
+.img-car, .img-motor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-slide-2 {
+    margin-left: 16.666667%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    animation: hide 0.4s ease-in-out;
 }
 
 .vf5 {
@@ -492,7 +524,10 @@ h2 {
     justify-content:space-around;
     padding: 10px 50px;
     text-align: center;
-    
+}
+
+.vf5-1 {
+    width: 25%;
 }
 
 .info {
@@ -502,10 +537,12 @@ h2 {
 .row-2 {
     font-size: larger;
     font-weight: bold;
+    animation: hide 0.4s ease-in-out;
 }
 
 .interact {
     text-align: center;
+    background-color: var(--bg);
 }
 
 .interact input {
@@ -663,7 +700,6 @@ a {
 .grid-item {
     position: relative;
     background-size: cover;
-    
     margin-bottom: 0;
     overflow: hidden;
     cursor: pointer;
@@ -675,7 +711,7 @@ a {
 }
 
 .grid-item:nth-child(2) {
-    background-image: url(https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/9/10/1091428/VF-8---4.jpg);
+    background-image: url(https://cmu-cdn.vinfast.vn/2023/02/9139734c-congdongthamquannhamay2003b-scaled-e1677459799819-1536x871.jpg);
 }
 
 .find {
@@ -695,7 +731,9 @@ a {
 .tree {
     display: block;
     position: relative;
-    background-image: url(/BTL/BTL_WebPri_2023/Image/tree.png);
+    background-image: url(https://images-stag.jazelc.com/uploads/theautopian-m2en/throughtrees.jpg);
+    background-size: 80%;
+    background-position: -10% 50%;
     height: 500px;
     margin: 50px;
     overflow: hidden;
@@ -738,7 +776,7 @@ a {
     cursor: pointer;
 }
 .tree-0 {
-    background-image: url(/BTL/BTL_WebPri_2023/Image/Car1.png);
+    background-image: url(/BTL/BTL_WebPri_2023/Page-Home/Image/Car1.png);
     height: 90vh;
     background-position:100% 0 ;
     background-size: cover;
@@ -765,6 +803,9 @@ a {
 .tree-0 .text-btr-4 p:first-child {
     font-size: 24px;
     font-weight: 500;
+}
+.fix {
+    background-color: transparent !important;
 }
 
 .fix input {
@@ -798,7 +839,6 @@ a {
     align-content: center;
     text-align: center;
     background-image: linear-gradient(to right, rgba(61, 83, 109, 0.789), rgba(62, 52, 96, 0.689));
-
 }
 
 .login-text p {
@@ -855,5 +895,108 @@ a {
     color:var(--clr);
     cursor: pointer;
 }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(188, 188, 188, 0.211);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: white;
+    color: var(--clr);
+}
+
+.next {
+    right: 0;
+}
+
+.slide-2, .slide-3 {
+    position: relative;
+}
+
+.slide-2 a, .slide-3 a {
+    color: var(--text) !important;
+    top: 20%;
+    background-color: var(--bg);
+    margin: 70px;
+}
+
+.slide-2 a:hover, .slide-3 a:hover {
+    color: var(--clr) !important;
+}
+
+.img-slide-3 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    animation: hide 0.4s ease-in-out;
+}
+
+.img-slide-3 img {
+    position: relative;
+    width: 65%;
+    object-fit: cover;
+}
+
+.service {
+    z-index: 10;
+    position: fixed;
+    top: 80px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    box-shadow: 10px 5px 5px #00000020;
+}
+
+.service .service-col li a {
+    color: var(--text);
+}
+
+.sv-row1-col1 .service-col {
+    margin: 10px;
+    margin-right: 30px;
+    line-height: 2;
+}
+
+.sv-row1-col1 {
+    display: flex;
+    justify-content:center;
+    margin: 15px;
+    margin-bottom: 10px;
+    flex: 0 0 65%;
+}
+
+.sv-row1-col2  {
+    position: relative;
+    margin: 15px;
+    margin-bottom: 10px; 
+    flex: 0 0 20%;
+}
+
+.sv-row1-col2 a {
+    background-color: var(--clr);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    border-radius: 3px;
+    padding: auto;
+    margin: 15px 10px;
+}
+
+.sv-row1-col2 img {
+    position: absolute; 
+
+}
+
+
 
 
