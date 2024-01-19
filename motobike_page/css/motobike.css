@@ -70,7 +70,7 @@ header>.menu>.drop-down>ul {
 
 
 header>.menu>.drop-down>ul>li {
-    padding: 10px 0;
+    padding: 10px 8px;
     color: #6c757d;
 }
 
@@ -489,8 +489,26 @@ li {
     margin-right: 8px;
 }
 
+.column:last-child>li:nth-child(3) {
+    position: relative;
+}
+
 .column:last-child>li:nth-child(3)>input {
     width: 100%;
     font-size: 16px;
     padding: 10px 8px;
+    border: none;
+}
+
+.column:last-child>li:nth-child(3)>.btn {
+    padding: 2px 2px;
+    position: absolute;
+    top: 4px;
+    right: 16px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #0070d2;
+    color: #fff;
+    cursor: pointer;
 }
