@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.find li {
+    color: white;
+    margin: 10px 25px;
+    display: inline-block;
+}
+
+.find li:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.find li:last-child {
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 40vw 40vw ;
+    grid-template-rows: 40vh;
+    justify-content: center;
+}
+
+.grid-item {
+    position: relative;
+    background-size: cover;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+.grid-item:first-child {
+    background-image: url(https://storage.googleapis.com/vinfast-data-01/Showroom%20Hai%20Phong1_1637201595.jpg);
+}
+
+.grid-item:nth-child(2) {
+    background-image: url(https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/9/10/1091428/VF-8---4.jpg);
+}
+
+.find {
+    position: absolute;
+    background-image: linear-gradient(#00000000, #000);
+    background-size: auto;
+    padding: 30px 0;
+    width: 100%;
+    bottom: -60px;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.find:hover {
+    bottom: 0px;
+}
+
+/* .tree {
+    background-image: url(/BTL/BTL_WebPri_2023/Image/tree.png);
+    margin: 50px;
+} */
+.tree {
+    position: relative;
+    background-image: url(/BTL/BTL_WebPri_2023/Image/tree.png);
+    height: 400px;
+    margin: 50px;
+    overflow: hidden;
+}
+.text-btr-3 {
+    position: absolute;
+    align-items: center;
+    padding: 100px;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #00000000, #000000d4);
+    right: 0;
+}
+
+.text-btr-3 p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* .tree-0 img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    object-position: 100% 0 ;
+}
+
+.text-btr-4 {
+    
+} */
+
+.tree-0 {
+    background-image: url(/BTL/BTL_WebPri_2023/Image/Car1.png);
+    width: 100vw;
+    height: 80vh;
+    background-position:100% 0 ;
+    background-size: cover;
+}
+
+.tree-0 .text-btr-4 {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 80vh;
+    justify-content: center;
+    padding-left: 150px;
+    align-content: center;
+}
+
+.tree-0 .text-btr-4 p {
+    color: rgb(61, 61, 61);
+    line-height: 25px;
+}
+
+.tree-0 .text-btr-4 p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+}
+.a {
+    cursor: pointer;
+}
+.hehe {
+    background-color: aqua;
+}
+
+* {box-sizing:border-box}
+/* thiết lập style cho slideshow container */
+ .slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+ }
+/* ẩn hình ảnh cho phần tử slideshow */
+ .mySlides {
+   display: none;
+ }
+/* thiết kế nút mũi tên*/
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+/* thiết kế nút mũi tên next nằm phía bên phải */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+/* Thiết lập style cho số hiển thị của phần tử */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+/* thiết lập style  nút tròn điều khiển*/
+ .dot {
+    position: relative;
+    top: -150px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    opacity: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+ }
+.active {
+    opacity: 100%;
+ }
+/* tạo hiệu ứng chuyển động fade */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+@-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+@keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
