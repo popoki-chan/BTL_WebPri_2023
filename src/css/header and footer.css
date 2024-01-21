@@ -92,7 +92,12 @@ background: #979797;
     justify-content: space-between;
     padding: 16px 30px;
     font-weight: 500;
-    position: relative;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
 }
 
 #header a {
