@@ -10,7 +10,7 @@ html {
 
 @font-face {
     font-family: vinfast ;
-    src: url(/BTL/BTL_WebPri_2023/Page-Home/Font/Xbka.otf);
+    src: url(../font/Xbka.otf);
 }
 
 
@@ -83,20 +83,17 @@ h2 {
 
 .click-bar {
     position: absolute;
-    bottom: 0%;
+    bottom: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-
 }
 
 .circle {
     width: 12px;
     height: 12px;
-    background-color: #ffffff;
+    background-color: #d0d0d0;
     border-radius: 50%;
     margin: 4px;
     cursor: pointer;
@@ -114,32 +111,26 @@ h2 {
     font-size: 40px;
     color: var(--text);
     justify-content:space-around;
+    margin-top: 50px;
 }
 
-.text {
-    margin: 80px 20px;
+.name-car {
+    margin: 20px;
     cursor: pointer;
     color: var(--text);
-    border: 3px solid rgba(255, 255, 255, 0);
-    border-top: #ffffff00;
-    border-left:#ffffff00 ;
-    border-right: #ffffff00;
 }
 
-.bn2 .text {
-    margin: 0 !important;
-}
 
 .change {
     color: var(--clr);
     border-bottom: 3px solid var(--clr);
 }
 
-path{
+.active path{
     fill: var(--clr) !important;
 }
 
-.logo-motor {
+.logo-motor.active {
     border-bottom: 3px solid var(--clr);
 }
 
@@ -212,7 +203,7 @@ path{
 }
 
 .bn2 {
-    margin: 50px 70px;
+    margin-top: 50px;
 }
 
 .mt1 {
@@ -591,20 +582,6 @@ a {
     object-fit: cover;
 }
 
-/* .service {
-    z-index: 10;
-    position: fixed;
-    top: 80px;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    box-shadow: 10px 5px 5px #00000020;
-}
-
-.service .service-col li a {
-    color: var(--text);
-} */
-
 .sv-row1-col1 .service-col {
     margin: 10px;
     margin-right: 30px;
@@ -639,9 +616,6 @@ a {
 
 .sv-row1-col2 img {
     position: absolute; 
-
 }
-
-
 
 
