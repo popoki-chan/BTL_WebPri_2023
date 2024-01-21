@@ -12,7 +12,7 @@ var str = "";
 for (let index = 0; index < arrProduct.length; index++) {
     str += `
     <div class="product">
-                <img src="/motobike_page/image/${arrProduct[index].hinh}" alt="">
+                <img src="/src/image/image-motobikePage/${arrProduct[index].hinh}" alt="">
                  <p class="b-sale">Bán chạy</p>
                 <div class="inf">
                     <h3>${arrProduct[index].note}</h3>
@@ -47,7 +47,7 @@ for (let i = 0; i < arrNewEndow.length; i++) {
     str1 += `
     <div class="column">
     <div class="endow-pic">
-        <img src="/motobike_page/image/${arrNewEndow[i].hinh1}" alt="">
+        <img src="/src/image/image-motobikePage/${arrNewEndow[i].hinh1}" alt="">
     </div>
     <div class="content">
         <h4>${arrNewEndow[i].tieuDe}</h4>
@@ -80,7 +80,7 @@ for (let i = 0; i < arrNews.length; i++) {
     str2 += `
     <div class="column">
     <div class="endow-pic">
-        <img src="/motobike_page/image/${arrNews[i].hinh1}" alt="">
+        <img src="/src/image/image-motobikePage/${arrNews[i].hinh1}" alt="">
     </div>
     <div class="content">
         <h4>${arrNews[i].tieuDe}</h4>
