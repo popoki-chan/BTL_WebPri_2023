@@ -56,4 +56,12 @@ const $$ = document.querySelectorAll.bind(document)
     // Validate password 
     const registPassword = $(".signup .password")
     const checkPassword = $(".signup .checkPassword")
+
+    // fix submit
+    const fixSubmits = $$('.submit')
+    for (fixSubmit of fixSubmits) {
+        fixSubmit.onclick = (e) => {
+            e.preventDefault();
+        }
+    }
 })();
