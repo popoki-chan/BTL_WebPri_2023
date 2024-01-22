@@ -12,6 +12,12 @@ a {
     text-decoration: none;
 }
 
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+
 :root {
     --clr: #1464f4;
     --clr-sec: #007bff40;
