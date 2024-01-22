@@ -88,10 +88,25 @@ battery.onclick = () => {
     })
 };
 
+// Auto close menu dropdown
+document.addEventListener('click', (event) => {
+    if (!serviceDropdown.contains(event.target) && !service.contains(event.target)) {
+        serviceDropdown.classList.remove('display-flex')
+    }
+
+    if (!car.contains(event.target) && !carDropdown.contains(event.target)) {
+        carDropdown.classList.remove('display-flex')
+    }
+
+    if (!battery.contains(event.target) && !batteryDropdown.contains(event.target)) {
+        batteryDropdown.classList.remove('display-flex')
+    }
+})
+
 // Footer
 const footer = document.querySelector('#footer');
-const mainMenu = footer.querySelectorAll('.main-menu')
-const subMenu = footer.querySelectorAll('.main-menu .sub-menu')
+const mainMenu = footer.querySelectorAll('.main-menu');
+const subMenu = footer.querySelectorAll('.main-menu .sub-menu');
 const arrowMenu = footer.querySelectorAll('.main-menu i');
 
 for (let i = 0; i < arrowMenu.length; i++) {
@@ -112,16 +127,4 @@ document.addEventListener('click', (event) => {
             subMenu[i].classList.add('hidden');
             mainMenu[i].classList.remove('active');
         }
-
-    if (!serviceDropdown.contains(event.target) && !service.contains(event.target)) {
-        serviceDropdown.classList.remove('display-flex')
-    }
-
-    if (!car.contains(event.target) && !carDropdown.contains(event.target)) {
-        carDropdown.classList.remove('display-flex')
-    }
-
-    if (!battery.contains(event.target) && !batteryDropdown.contains(event.target)) {
-        batteryDropdown.classList.remove('display-flex')
-    }
 })

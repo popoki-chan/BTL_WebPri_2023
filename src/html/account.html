@@ -1,27 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="/css/motobike.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>account</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinfast - Website chính thức tại Việt Nam</title>
+    <link rel="icon" type="image/x-icon" href="../image/img-header_footer/icon-Vinfast.png">
+    <link rel="stylesheet" href="../css/account.css" />
+    <link rel="stylesheet" href="../css/header and footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
-
 <body>
-    <header>
-        <div class="logo-header">
-            <img src="/image/logo-vf-header.png" alt="">
+    <div id="header" class="flex alg-center">
+        <div class="logo">
+            <a class="flex" href="../../index.html">
+                <img src="../image/img-header_footer/header and footer/VinFast-logo.svg" alt="">
+            </a>
         </div>
-        <div class="menu">
-            <li>Sản phẩm</li>
-            <li>Ưu đãi</li>
-            <li>Dịch vụ hậu mãi</li>
-            <li>Tin tức</li>
+        <ul class="menu flex">
+            <li>
+                <a href="./gioiThieu.html">Giới thiệu</a>
+            </li>
+            <li class="car">
+                <a href="#">Ô tô</a>
+                <div class="menu-lv2 alg-center fade">
+                    <div class="car--style flex">
+                        <p class="active">ĐỘNG CƠ ĐIỆN</p>
+                        <p>ĐỘNG CƠ XĂNG</p>
+                    </div>
+                    <div class="car--electric car--infor">
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/electric/vf-5-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/electric/vf-5.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">VF 5</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/electric/vf6-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/electric/vf6.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">VF 6</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/electric/Vfe34-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/electric/VFe34.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">VF e34</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/electric/VF7-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/electric/VF7png.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">VF 7</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/electric/VF8-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/electric/VF8.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">VF 8</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/electric/VF9-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/electric/VF9.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">VF 9</p>
+                        </div>
+                    </div>
+                    <div class="car--petrol car--infor">
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/petrol/Fadil-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/petrol/Fadil.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">Fadil</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/petrol/Lux-A2-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/petrol/Lux-A2.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">LUX A2.0</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/petrol/Lux-SA2-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/petrol/Lux-SA2.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">LUX SA2.0</p>
+                        </div>
+                        <div class="item flex alg-center">
+                            <div class="item--img">
+                                <a href="#" class="img--orgin">
+                                    <img src="../image/img-header_footer/car/petrol/President-1.png" alt="">
+                                </a>
+                                <a href="#" class="img--hover">
+                                    <img src="../image/img-header_footer/car/petrol/President.png" alt="">
+                                </a>
+                            </div>
+                            <p class="name flex jtf-center">President</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="./motobike.html">Xe máy điện</a>
+            </li>
+            <li class="service">
+                <a href="#">Dịch vụ hậu mãi</a>
+                <div class="menu-lv2 flex jtf-center fade">
+                    <div class="item maintain ">
+                        <p class="heading">Bảo hành & Bảo dưỡng</p>
+                        <ul class="infor">
+                            <li><a href="#">Thông tin bảo hành</a></li>
+                            <li><a href="#">Thông tin bảo dưỡng định kì</a></li>
+                            <li><a href="#">Thông tin dịch vụ</a></li>
+                        </ul>
+                    </div>
+                    <div class="item istruct">
+                        <ul class="infor">
+                            <p class="heading">Hướng dẫn sử dụng</p>
+                            <li><a href="#">Hướng dẫn sử dụng ô tô</a></li>
+                            <li><a href="#">Hướng dẫn sử dụng xe máy điện</a></li>
+                            <li><a href="#">Hướng dẫn sử dụng Vinfast App</a></li>
+                            <li><a href="#">Hướng dẫn ứng phó khẩn cấp</a></li>
+                        </ul>
+                    </div>
+                    <div class="item booked flex jtf-center">
+                        <button>Đặt lịch</button>
+                        <div class="booked--img">
+                            <img src="../image/img-header_footer/service/bao-hanh.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="battery">
+                <a href="#">Pin và trạm sạc</a>
+                <div class="menu-lv2 flex jtf-center alg-center fade">
+                    <div class="item flex alg-center">
+                        <div class="item--img">
+                            <a href="#">
+                                <img src="../image/img-header_footer/battery/pin-o-to.png" alt="">
+                            </a>
+                        </div>
+                        <p class="title">Pin và trạm sạc Ô tô điện</p>
+                    </div>
+                    <div class="item flex alg-center">
+                        <div class="item--img">
+                            <a href="./tramSac.html">
+                                <img src="../image/img-header_footer/battery/pin-xe-dien.png" alt="">
+                            </a>
+                        </div>
+                        <p class="title">Pin và trạm sạc Xe máy điện</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="account flex alg-center">
+            <div>
+                <a href="./account.html">Tài khoản</a>
+            </div>
+            <div class="register">
+                <p>Đăng kí lái thử</p>
+            </div>
+            <i class="open-sm fa-solid fa-bars"></i>
         </div>
-        <div class="account">Tài khoản</div>
-    </header>
+        <div class="side-menu">
+            <div class="exit-sm flex">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div>
+                <p class="heading">Tiện ích</p>
+                <ul>
+                    <li>
+                        <a href="#">So sánh xe</a>
+                    </li>
+                    <li>
+                        <a href="#">Dự đoán chi phí lăn bánh</a>
+                    </li>
+                    <li>
+                        <a href="#">Dự đoán vay trả góp</a>
+                    </li>
+                    <li>
+                        <a href="#">Thẩm định vay trả góp</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="heading">Tin tức</p>
+                <ul>
+                    <li>
+                        <a href="#">Công ty</a>
+                    </li>
+                    <li>
+                        <a href="#">Cộng đồng</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="heading">Tìm showroom & Trạm sạc</p>
+                <ul>
+                    <li>
+                        <a href="#">Câu hỏi thường gặp</a>
+                    </li>
+                    <li>
+                        <a href="#">Cộng đồng</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="heading">Mua sắm</p>
+                <ul>
+                    <li>
+                        <a href="#">Phụ kiện xe</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="heading">Thảo luận</p>
+                <ul>
+                    <li>
+                        <a href="#">Cộng đồng Vinfast Toàn cầu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="national flex">
+                <p>Lựa chọn quốc gia</p>
+                <p>Việt Nam</p>
+            </div>
+        </div>
+        <div class="language">
+            <div class="exit-lg flex">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div>
+                <p class="heading">Bắc MỸ</p>
+                <div>
+                    <div class="origin">
+                        <p class="sub-heading">United States</p>
+                        <div class="langs flex">
+                            <p>English</p>
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <p class="sub-heading">Canada</p>
+                        <div class="langs flex">
+                            <p>English</p>
+                            <p>Francais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="heading">Châu Âu </p>
+                <div>
+                    <div class="origin">
+                        <p class="sub-heading">France</p>
+                        <div class="langs flex">
+                            <p>Francais</p>
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <p class="sub-heading">Deutschland</p>
+                        <div class="langs flex">
+                            <p>Deutsch</p>
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <p class="sub-heading">Nederland</p>
+                        <div class="langs flex">
+                            <p>Nederlands</p>
+                        </div>
+                    </div>
+                    <div class="origin">
+                        <p class="sub-heading">Others</p>
+                        <div class="langs flex">
+                            <p>English</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="heading">Châu Á</p>
+                <div>
+                    <div class="origin">
+                        <p class="sub-heading">Việt Nam</p>
+                        <div class="langs flex">
+                            <p>Tiếng Việt</p>
+                            <p>English</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="account" class="modal-container">
+        <!-- Sign in -->
+        <!-- <div class="modal-container"> -->
+        <form class="signin form open">
+            <p class="title">Đăng nhập</p>
+            <div class="model-box">
+                <div class="form-group">
+                    <input
+                        name="email"
+                        class="field email"
+                        type="email"
+                        placeholder="Email"
+                    />
+
+                </div>
+               <div class="form-group">
+                   <input
+                       name="password"
+                       class="field password"
+                       type="password"
+                       placeholder="Mật khẩu"
+                   />
+                   <i class="fa-solid fa-eye togglePassword"></i>
+
+               </div> 
+            </div>
+
+            <div class="check">
+                <div class="remember">
+                    <input
+                        class="checkbox"
+                        type="checkbox"
+                        name="remember"
+                        id="remember"
+                    />
+                    <label for="remember">Ghi nhớ tài khoản </label>
+                </div>
+                <a class="forgot" href="">Quên mật khẩu?</a>
+            </div>
+
+            <div class="footer">
+                <button class="submit" type="submit">Đăng nhập</button>
+                <p>Chưa có tài khoản?</p>
+                <div class="form-change">Đăng ký tài khoản</div>
+            </div>
+        </form>
+        <!-- </div> -->
+
+        <!-- Sign up -->
+        <form class="signup form">
+            <p class="title">Đăng kí tài khoản</p>
+            <div class="model-box">
+                <div class="form-group">
+                    <input
+                        class="field fullname"
+                        type="text"
+                        placeholder="Họ và tên"
+                    />
+                </div>
+                <div class="form-group">
+                    <input
+                        class="field email"
+                        type="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="form-group">
+                    <input
+                        class="field password"
+                        type="password"
+                        placeholder="Mật khẩu"
+                    />
+                    <i class="fa-solid fa-eye togglePassword"></i>
+                </div>
+                <div class="form-group">
+                    <input
+                        class="field passwordCheck"
+                        type="password"
+                        placeholder="Nhập lại mật khẩu"
+                    />
+                    <i class="fa-solid fa-eye togglePassword"></i>
+                </div>
+            </div>
+            <div class="request-passwword">
+                <!-- <div class="below-desc"> -->
+                <!-- <i class="fa-solid fa-check"></i> -->
+                <strong>Mật khẩu bao gồm</strong>
+                <!-- </div> -->
+                <div class="below-desc">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Ít nhất 8 ký tự</p>
+                </div>
+                <div class="below-desc">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Chữ hoa & chữ thường</p>
+                </div>
+                <div class="below-desc">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Ít nhất 1 số</p>
+                </div>
+            </div>
+            <div class="policy">
+                Bằng việc bấm nút Đăng ký bên dưới, tôi xác nhận đã đọc,
+                hiểu và đồng ý với các
+                <a href="">Điều kiện và Điều khoản</a> của VinFast.
+            </div>
+            <div class="check">
+                <div class="remember">
+                    <input
+                        class="checkbox"
+                        type="checkbox"
+                        name="iAgree"
+                        id="iAgree"
+                    />
+                    <label for="iAgree"
+                        >Đăng ký nhận thông tin chương trình khuyến mãi,
+                        dịch vụ từ VinFast
+                    </label>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button class="submit" type="submit">Đăng ký</button>
+                <p>Đã có tài khoản?</p>
+                <div class="form-change">Đăng nhập</div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+
+        ;(() => {
+
+            // Change form
+            const changeBtns = $$(".form-change")
+
+            changeBtns[0].onclick = () => {
+                $('.signin').classList.remove('open')
+                $('.signup').classList.add('open')
+            }
+            changeBtns[1].onclick = () => {
+                $('.signup').classList.remove('open')
+                $('.signin').classList.add('open')
+            }
+
+            // Check input
+            const mtCheck = () => {
+                const activeInputs = $$('.form.open .field')
+                for(input of activeInputs) {
+                    if(input.value.trim() == '') return false
+                }
+
+                return true
+            }
+
+            const inputs = $$('.field')  
+            for(input of inputs) {
+                input.oninput = () => {
+                    const submitBtn = $('.form.open .submit')
+                    if(mtCheck() == true) {
+                        submitBtn.classList.add('active')
+                    } else {
+                        submitBtn.classList.remove('active')
+                    }
+                }
+            }
+            
+            // Toggle password
+            const togglePasswords = $$(".togglePassword")         
+            for(toggleBtn of togglePasswords) {
+                toggleBtn.onclick = (e) => {
+                    const password = e.target.parentNode.querySelector('input')
+                    if(password.type == "password") {
+                        password.type = "text"
+                    } else {
+                        password.type = "password"
+                    }
+
+                    e.target.classList.toggle('fa-eye-slash')
+                    e.target.classList.toggle('fa-eye')
+                }
+            }
+
+            // Validate password 
+            const registPassword = $(".signup .password")
+            const checkPassword = $(".signup .checkPassword")
+        })();
+    </script>
+    <script src="../js/header and footer.js"></script>
 </body>
-
 </html>
