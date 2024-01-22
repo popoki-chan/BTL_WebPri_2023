@@ -1,27 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="/css/motobike.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>account</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinfast - Website chính thức tại Việt Nam</title>
+    <link rel="stylesheet" href="../css/account.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
-
 <body>
-    <header>
-        <div class="logo-header">
-            <img src="/image/logo-vf-header.png" alt="">
-        </div>
-        <div class="menu">
-            <li>Sản phẩm</li>
-            <li>Ưu đãi</li>
-            <li>Dịch vụ hậu mãi</li>
-            <li>Tin tức</li>
-        </div>
-        <div class="account">Tài khoản</div>
-    </header>
+    <div id="account" class="modal-container">
+        <!-- Sign in -->
+        <!-- <div class="modal-container"> -->
+        <form class="signin form open">
+            <p class="title">Đăng nhập</p>
+            <div class="model-box">
+                <div class="form-group">
+                    <input
+                        name="email"
+                        class="field email"
+                        type="email"
+                        placeholder="Email"
+                    />
 
+                </div>
+               <div class="form-group">
+                   <input
+                       name="password"
+                       class="field password"
+                       type="password"
+                       placeholder="Mật khẩu"
+                   />
+                   <i class="fa-solid fa-eye togglePassword"></i>
+
+               </div> 
+            </div>
+
+            <div class="check">
+                <div class="remember">
+                    <input
+                        class="checkbox"
+                        type="checkbox"
+                        name="remember"
+                        id="remember"
+                    />
+                    <label for="remember">Ghi nhớ tài khoản </label>
+                </div>
+                <a class="forgot" href="">Quên mật khẩu?</a>
+            </div>
+
+            <div class="footer">
+                <button class="submit" type="submit">Đăng nhập</button>
+                <p>Chưa có tài khoản?</p>
+                <div class="form-change">Đăng ký tài khoản</div>
+            </div>
+        </form>
+        <!-- </div> -->
+
+        <!-- Sign up -->
+        <form class="signup form">
+            <p class="title">Đăng kí tài khoản</p>
+            <div class="model-box">
+                <div class="form-group">
+                    <input
+                        class="field fullname"
+                        type="text"
+                        placeholder="Họ và tên"
+                    />
+                </div>
+                <div class="form-group">
+                    <input
+                        class="field email"
+                        type="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="form-group">
+                    <input
+                        class="field password"
+                        type="password"
+                        placeholder="Mật khẩu"
+                    />
+                    <i class="fa-solid fa-eye togglePassword"></i>
+                </div>
+                <div class="form-group">
+                    <input
+                        class="field passwordCheck"
+                        type="password"
+                        placeholder="Nhập lại mật khẩu"
+                    />
+                    <i class="fa-solid fa-eye togglePassword"></i>
+                </div>
+            </div>
+            <div class="request-passwword">
+                <!-- <div class="below-desc"> -->
+                <!-- <i class="fa-solid fa-check"></i> -->
+                <strong>Mật khẩu bao gồm</strong>
+                <!-- </div> -->
+                <div class="below-desc">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Ít nhất 8 ký tự</p>
+                </div>
+                <div class="below-desc">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Chữ hoa & chữ thường</p>
+                </div>
+                <div class="below-desc">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Ít nhất 1 số</p>
+                </div>
+            </div>
+            <div class="policy">
+                Bằng việc bấm nút Đăng ký bên dưới, tôi xác nhận đã đọc,
+                hiểu và đồng ý với các
+                <a href="">Điều kiện và Điều khoản</a> của VinFast.
+            </div>
+            <div class="check">
+                <div class="remember">
+                    <input
+                        class="checkbox"
+                        type="checkbox"
+                        name="iAgree"
+                        id="iAgree"
+                    />
+                    <label for="iAgree"
+                        >Đăng ký nhận thông tin chương trình khuyến mãi,
+                        dịch vụ từ VinFast
+                    </label>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button class="submit" type="submit">Đăng ký</button>
+                <p>Đã có tài khoản?</p>
+                <div class="form-change">Đăng nhập</div>
+            </div>
+        </form>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+
+        ;(() => {
+
+            // Change form
+            const changeBtns = $$(".form-change")
+
+            changeBtns[0].onclick = () => {
+                $('.signin').classList.remove('open')
+                $('.signup').classList.add('open')
+            }
+            changeBtns[1].onclick = () => {
+                $('.signup').classList.remove('open')
+                $('.signin').classList.add('open')
+            }
+
+            // Check input
+            const mtCheck = () => {
+                const activeInputs = $$('.form.open .field')
+                for(input of activeInputs) {
+                    if(input.value.trim() == '') return false
+                }
+
+                return true
+            }
+
+            const inputs = $$('.field')  
+            for(input of inputs) {
+                input.oninput = () => {
+                    const submitBtn = $('.form.open .submit')
+                    if(mtCheck() == true) {
+                        submitBtn.classList.add('active')
+                    } else {
+                        submitBtn.classList.remove('active')
+                    }
+                }
+            }
+            
+            // Toggle password
+            const togglePasswords = $$(".togglePassword")         
+            for(toggleBtn of togglePasswords) {
+                toggleBtn.onclick = (e) => {
+                    const password = e.target.parentNode.querySelector('input')
+                    if(password.type == "password") {
+                        password.type = "text"
+                    } else {
+                        password.type = "password"
+                    }
+
+                    e.target.classList.toggle('fa-eye-slash')
+                    e.target.classList.toggle('fa-eye')
+                }
+            }
+
+            // Validate password 
+            const registPassword = $(".signup .password")
+            const checkPassword = $(".signup .checkPassword")
+        })();
+    </script>
 </body>
-
 </html>
