@@ -55,18 +55,19 @@ form {
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
     width: 326px;
-    height: 100vh;
+
     animation: fadeIn .2s ease-in;
     display: none;
 }
+
 
 .form.open {
     display: block;
 }
 
-#account .title {
+.title {
     margin-bottom: 40px;
-    font-size: 1.75em;
+    font-size: 28px;
     font-weight: 600;
     text-align: left;
     padding-top: calc(22vh - 70px);
@@ -86,6 +87,27 @@ form {
 .form-group {
     margin-bottom: 10px;
     position: relative;
+}
+
+.form-group .inputContainer {
+    position: relative;
+}
+
+.form-group span {
+    display: none;
+}
+
+
+.form-group.error span {
+    display: unset;
+    font-size: 12px;
+    padding: 4px;
+    color: red;
+
+}
+
+.form-group.error .field {
+    border: 1px solid red !important; 
 }
 
 .form-group .togglePassword{
@@ -208,6 +230,10 @@ form {
     align-items: center;
 }
 
+.below-desc.checked {
+    color: var(--clr);
+}
+
 .below-desc i {
     margin-right: 10px;
 }
@@ -230,3 +256,8 @@ form {
     text-decoration: underline;
     color: var(--clr);
 }
+
+.signup {
+    height: 120vh;
+}
+

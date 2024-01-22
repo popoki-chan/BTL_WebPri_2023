@@ -414,20 +414,27 @@
                     />
                 </div>
                 <div class="form-group">
-                    <input
-                        class="field password"
-                        type="password"
-                        placeholder="Mật khẩu"
-                    />
-                    <i class="fa-solid fa-eye togglePassword"></i>
+                    <div class="inputContainer">
+                        <input
+                            class="field password"
+                            type="password"
+                            placeholder="Mật khẩu"
+                        />
+                        <i class="fa-solid fa-eye togglePassword"></i>
+                    </div>
+                    <span>Mật khẩu phải đúng định dạng</span>
                 </div>
                 <div class="form-group">
-                    <input
-                        class="field passwordCheck"
-                        type="password"
-                        placeholder="Nhập lại mật khẩu"
-                    />
-                    <i class="fa-solid fa-eye togglePassword"></i>
+                    <div class="inputContainer">
+                        <input
+                            class="field passwordCheck"
+                            type="password"
+                            placeholder="Nhập lại mật khẩu"
+                        />
+                        <i class="fa-solid fa-eye togglePassword"></i>
+                    </div>
+
+                    <span>Mật khẩu không trùng khớp</span>
                 </div>
             </div>
             <div class="request-passwword">
@@ -435,15 +442,15 @@
                 <!-- <i class="fa-solid fa-check"></i> -->
                 <strong>Mật khẩu bao gồm</strong>
                 <!-- </div> -->
-                <div class="below-desc">
+                <div class="below-desc length">
                     <i class="fa-solid fa-check"></i>
                     <p>Ít nhất 8 ký tự</p>
                 </div>
-                <div class="below-desc">
+                <div class="below-desc char">
                     <i class="fa-solid fa-check"></i>
                     <p>Chữ hoa & chữ thường</p>
                 </div>
-                <div class="below-desc">
+                <div class="below-desc numRequire">
                     <i class="fa-solid fa-check"></i>
                     <p>Ít nhất 1 số</p>
                 </div>
